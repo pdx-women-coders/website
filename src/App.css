@@ -11,6 +11,7 @@
 .App {
   text-align: center;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #282c34;
 }
 
 .Navbar {
@@ -29,6 +30,68 @@
   max-width: 800px;
   padding: 0 20px;
   color: #282c34;
+
+  a:visited,a:link,a:active {
+    color: #282c34;
+  }
+
+  a:hover {
+    color: #D2649A;
+  }
+}
+
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 0 10%;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    margin-top: 0;
+    padding: 20px;
+  }
+}
+
+.Contact, .About {
+  padding: 0 10%;
+
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
+}
+
+.Home-content {
+  text-align: left;
+  margin-right: 16px;
+
+  @media (max-width: 600px) {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.Home-image {
+  width: 50%;
+  /* border-radius: 120px; */
+  display: inline-block;
+  position: relative;
+  outline: 4px solid #D2649A;
+  outline-offset: -100px;
+  border: 20px solid transparent;
+  border-width: 150px 50px 50px 150px;
+  margin: -75px 0 0 -75px;
+
+  @media (max-width: 600px) {
+    width: 200px;
+    border-radius: 40px;
+    outline-offset: -20px;
+    border: 20px solid transparent;
+    border-width: 25px 25px 25px 25px;
+    margin: -25px 0 0 -25px;
+  }
 }
 
 .Button {
@@ -40,4 +103,9 @@
   border-radius: 24px;
   font-weight: bold;
   cursor: pointer;
+  border: none;
+}
+
+.Button:hover {
+  background-color: #D2649A;
 }
